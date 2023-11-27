@@ -20,12 +20,12 @@
 # PARAMETERS
 #################
 $Method = "ProjectGroupMembers" #Projects, ProjectGroupMembers, ProjectTeamMembers, ProjectTFVCItems, ProjectRepositories, ACLACEs, ProjectDeploymentApprovers
-$LogFileBasePath = "c:\@Work\ScriptsManagementReporting\AzureDevOps"
+$LogFileBasePath = "Path\Where\Output\File\Written"
 $LogFileDateSuffix = "20210113"
-$OrganizationName = "vistex"
-$ProjectName = "Vistex.DevOps" #Team project name for which to produce report
-$PersonalAccessTokenName = "Audit_Read"
-$PersonalAccessToken = "7kwdrfnmwqofonfiku3vsx773wqf3tl4svedgklws4fv74vcr5vq"
+$OrganizationName = "YourOrgName"
+$ProjectName = "YourProjectName" #Team project name for which to produce report
+$PersonalAccessTokenName = "Audit_Read" #PAT must have code read permission at minimum
+$PersonalAccessToken = "PersonalAccessToken"
 
 #################
 # FUNCTIONS
