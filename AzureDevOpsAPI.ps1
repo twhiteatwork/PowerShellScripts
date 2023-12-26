@@ -579,19 +579,12 @@ ElseIf ($Method -eq "ProjectRepositories") {
     GetProjectRepositories $OrganizationName $ProjectName
 }
 ElseIf ($Method -eq "ACLACEs") {
-    If ($ProjectName -eq "Conduit") {
-        GetACLACEs $OrganizationName "a39371cf-0841-4c16-bbd3-276e341bc052" "$" #VersionControlItems
-        GetACLACEs $OrganizationName "a39371cf-0841-4c16-bbd3-276e341bc052" "$\Conduit" #VersionControlItems
-    }
-    ElseIf ($ProjectName -eq "GTMS") {
-        GetACLACEs $OrganizationName "a39371cf-0841-4c16-bbd3-276e341bc052" "$" #VersionControlItems
-        GetACLACEs $OrganizationName "a39371cf-0841-4c16-bbd3-276e341bc052" "$\GTMS" #VersionControlItems
-        GetACLACEs $OrganizationName "2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87" "repov2" #Git Repositories
-    }
-    ElseIf ($ProjectName -eq "Vistex.DevOps") {
-        GetACLACEs $OrganizationName "2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87" "repov2" #Git Repositories
+    If ($ProjectName -eq "YourProjectName") {
+        GetACLACEs $OrganizationName "YourProjectID" "$" #VersionControlItems
+        GetACLACEs $OrganizationName "YourProjectID" "$\YourProjectID" #VersionControlItems #YourProjectID = GUID from UI
     }
     Else {
+        #Do nothing
     }
 }
 ElseIf ($Method -eq "ProjectDeploymentApprovers") {
